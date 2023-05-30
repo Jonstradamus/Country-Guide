@@ -26,7 +26,7 @@ inputCountry.addEventListener('input', async e => {
 resultado.innerHTML = "";
 
   if (filtercountries.length > 10) {
-    resultado.innerHTML += '<span id="error"></span>';
+    resultado.innerHTML += '<span id="error">You have to be more specific on your search</span>';
   }
 
   if (filtercountries.length >= 1 && filtercountries.length < 10) {
@@ -72,7 +72,7 @@ resultado.innerHTML = "";
             <a href='https://en.wikipedia.org/wiki/${filtercountries[0].name.common}' target="_blank" class='name-country'>${filtercountries[0].name.common}</a>
             
             <div class='info'>
-            <p><a href='https://en.wikipedia.org/wiki/Demographics_of_${filtercountries[0].name.common}' target="_blank" class='link'>Population: ${filtercountries[0].population} Millions</a></p>
+            <p><a href='https://en.wikipedia.org/wiki/Demographics_of_${filtercountries[0].name.common}' target="_blank" class='link'>Population: ${filtercountries[0].population}</a></p>
             
             <a href='https://en.wikipedia.org/wiki/${filtercountries[0].capital}' target="_blank" class='link'>Capital: ${filtercountries[0].capital}</a>
             
