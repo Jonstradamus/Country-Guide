@@ -1,0 +1,300 @@
+*,
+::before,
+::after {
+    
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+  }
+
+::-webkit-scrollbar {
+    width: 3px;
+    
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    border-radius: 3rem;
+    background: #03b8ff09;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 174, 255);
+    border-radius: 2rem;
+    
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0b0194; }
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+  }
+
+
+  .flag {
+    
+    border-radius: 10px;
+    width: 14rem;
+    height: 8rem;
+    object-fit: cover;
+    
+    
+  }
+
+
+ /*animacion*/
+
+
+  body  {
+    font-family: 'Noto Sans', sans-serif;
+    backdrop-filter: blur(0px);
+
+    background-image: url('img/sun-sunlight-bright-outdoor-sky.jpg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:1500px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:1500px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+/*animacion*/
+
+}
+#error{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+}
+
+.bandera{
+
+    
+    background-color: rgb(0, 174, 255);
+padding: 9px;
+border-radius: 2rem;
+transform: scale(1.0);
+    transition: 0.5s;
+    box-shadow: 0px 10px 15px rgba(21, 21, 21, 0.6274509804);
+}
+.bandera:hover{
+    background-color: #fa8e00;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+@keyframes colors {
+    from {background-color: rgb(0, 174, 255);}
+    to {background-color:  #fa8e00;}
+    
+  }
+
+  .descripcion{
+    color: #202020;
+  }
+#container{
+    width: 20rem;
+    
+    border-radius: 2rem;
+    padding: 20px;
+    margin: 10px;
+    animation-name: colors;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+  .flags {
+justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 14rem;
+    height: 8rem;
+    object-fit: cover;
+   margin-right: 0%;
+    
+  }
+
+  
+
+  .tittle{
+    width: auto;
+   
+    font-weight: 800;
+    color: black;
+    text-align: center;
+  }
+
+  #subtitulo{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 1000;
+  }
+
+  .name-country{
+    text-align: center;
+    color: black;
+  }
+
+  #resultado {
+    margin-top: 20px;
+    
+    font-family: 'Noto Sans', sans-serif;
+background-color: rgba(71, 71, 71, 0);
+border-radius: 2rem;
+overflow-x: scroll;
+overflow-y:hidden;
+max-width: 50rem;
+height: auto;
+padding: 2rem;
+gap: 1rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+color: #fff;
+
+  }
+#search-btn{
+    padding-left: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: larger;
+    background-color: #00000000;
+    border-radius: 1rem;
+    color: #000000;
+    border: none;
+}
+
+#country-input{
+    font-size: larger;
+    width: 11rem;
+    font-family: 'Noto Sans', sans-serif;
+    border-bottom-color: #000000;
+    color: #000000;
+    background-color: #00000000;
+}
+
+::placeholder {
+    font-size: small;
+    text-decoration: underline;
+    font-family: 'Righteous', cursive;
+    color: rgb(0, 0, 0);
+  }
+  .container-flags{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 1.5rem;
+    padding: 10px;
+    background-color: rgba(92, 92, 92, 0.308);
+    box-shadow: 0px 10px 15px rgba(21, 21, 21, 0.6274509804);
+  }
+
+  .info{
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: black;
+    text-align: center;
+  }
+
+  .flag{
+    
+    transform: scale(1.0);
+    transition: 0.3s;
+  }
+  .flag:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+
+
+.link{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.link:hover{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.temperature:hover{
+    cursor: pointer;
+    
+}
+
+.name-country:hover{
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+}
+
+.name-country{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+
+  @media (max-width: 803px) {
+    
+    
+    #resultado {
+        overflow-y:visible;
+    max-width: 20rem;
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    color: #fff;
+      }
+       }
+
+       .tittle{
+        width: auto;
+        font-family: 'Righteous', cursive;
+        color: black;
+        text-align: center;
+      }
+
+      #subtitulo{
+        text-align: center;
+      }
+
+     
